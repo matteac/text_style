@@ -159,30 +159,30 @@ pub trait Colored {
     fn bg_white(self) -> String;
 
     fn fg_black(self) -> String;
-    fn fg_red(self) -> String;
-    fn fg_green(self) -> String;
-    fn fg_yellow(self) -> String;
-    fn fg_blue(self) -> String;
-    fn fg_magenta(self) -> String;
-    fn fg_cyan(self) -> String;
-    fn fg_light_grey(self) -> String;
-    fn fg_grey(self) -> String;
-    fn fg_light_red(self) -> String;
-    fn fg_light_green(self) -> String;
-    fn fg_light_yellow(self) -> String;
-    fn fg_light_blue(self) -> String;
-    fn fg_light_magenta(self) -> String;
-    fn fg_light_cyan(self) -> String;
-    fn fg_white(self) -> String;
-    fn fg_strong(self) -> String;
+    fn red(self) -> String;
+    fn green(self) -> String;
+    fn yellow(self) -> String;
+    fn blue(self) -> String;
+    fn magenta(self) -> String;
+    fn cyan(self) -> String;
+    fn light_grey(self) -> String;
+    fn grey(self) -> String;
+    fn light_red(self) -> String;
+    fn light_green(self) -> String;
+    fn light_yellow(self) -> String;
+    fn light_blue(self) -> String;
+    fn light_magenta(self) -> String;
+    fn light_cyan(self) -> String;
+    fn white(self) -> String;
+    fn strong(self) -> String;
 
-    fn style_bold(self) -> String;
-    fn style_italic(self) -> String;
-    fn style_underline(self) -> String;
-    fn style_blink(self) -> String;
-    fn style_reverse(self) -> String;
-    fn style_hidden(self) -> String;
-    fn style_crossed(self) -> String;
+    fn bold(self) -> String;
+    fn italic(self) -> String;
+    fn underline(self) -> String;
+    fn blink(self) -> String;
+    fn reverse(self) -> String;
+    fn hidden(self) -> String;
+    fn crossed(self) -> String;
 
     fn close(self) -> String;
 }
@@ -243,75 +243,75 @@ impl Colored for String {
     fn fg_black(self) -> String {
         format!("{}{}", Foreground::Black, self)
     }
-    fn fg_red(self) -> String {
+    fn red(self) -> String {
         format!("{}{}", Foreground::Red, self)
     }
-    fn fg_green(self) -> String {
+    fn green(self) -> String {
         format!("{}{}", Foreground::Green, self)
     }
-    fn fg_yellow(self) -> String {
+    fn yellow(self) -> String {
         format!("{}{}", Foreground::Yellow, self)
     }
-    fn fg_blue(self) -> String {
+    fn blue(self) -> String {
         format!("{}{}", Foreground::Blue, self)
     }
-    fn fg_magenta(self) -> String {
+    fn magenta(self) -> String {
         format!("{}{}", Foreground::Magenta, self)
     }
-    fn fg_cyan(self) -> String {
+    fn cyan(self) -> String {
         format!("{}{}", Foreground::Cyan, self)
     }
-    fn fg_light_grey(self) -> String {
+    fn light_grey(self) -> String {
         format!("{}{}", Foreground::LightGrey, self)
     }
-    fn fg_grey(self) -> String {
+    fn grey(self) -> String {
         format!("{}{}", Foreground::Grey, self)
     }
-    fn fg_light_red(self) -> String {
+    fn light_red(self) -> String {
         format!("{}{}", Foreground::LightRed, self)
     }
-    fn fg_light_green(self) -> String {
+    fn light_green(self) -> String {
         format!("{}{}", Foreground::LightGreen, self)
     }
-    fn fg_light_yellow(self) -> String {
+    fn light_yellow(self) -> String {
         format!("{}{}", Foreground::LightYellow, self)
     }
-    fn fg_light_blue(self) -> String {
+    fn light_blue(self) -> String {
         format!("{}{}", Foreground::LightBlue, self)
     }
-    fn fg_light_magenta(self) -> String {
+    fn light_magenta(self) -> String {
         format!("{}{}", Foreground::LightMagenta, self)
     }
 
-    fn fg_light_cyan(self) -> String {
+    fn light_cyan(self) -> String {
         format!("{}{}", Foreground::LightCyan, self)
     }
-    fn fg_white(self) -> String {
+    fn white(self) -> String {
         format!("{}{}", Foreground::White, self)
     }
-    fn fg_strong(self) -> String {
+    fn strong(self) -> String {
         format!("{}{}", Foreground::Strong, self)
     }
 
-    fn style_bold(self) -> String {
+    fn bold(self) -> String {
         format!("{}{}", Style::Bold, self)
     }
-    fn style_italic(self) -> String {
+    fn italic(self) -> String {
         format!("{}{}", Style::Italic, self)
     }
-    fn style_underline(self) -> String {
+    fn underline(self) -> String {
         format!("{}{}", Style::Underline, self)
     }
-    fn style_blink(self) -> String {
+    fn blink(self) -> String {
         format!("{}{}", Style::Blink, self)
     }
-    fn style_reverse(self) -> String {
+    fn reverse(self) -> String {
         format!("{}{}", Style::Reverse, self)
     }
-    fn style_hidden(self) -> String {
+    fn hidden(self) -> String {
         format!("{}{}", Style::Hidden, self)
     }
-    fn style_crossed(self) -> String {
+    fn crossed(self) -> String {
         format!("{}{}", Style::Crossed, self)
     }
 }
@@ -372,75 +372,75 @@ impl Colored for &str {
     fn fg_black(self) -> String {
         format!("{}{}", Foreground::Black, self)
     }
-    fn fg_red(self) -> String {
+    fn red(self) -> String {
         format!("{}{}", Foreground::Red, self)
     }
-    fn fg_green(self) -> String {
+    fn green(self) -> String {
         format!("{}{}", Foreground::Green, self)
     }
-    fn fg_yellow(self) -> String {
+    fn yellow(self) -> String {
         format!("{}{}", Foreground::Yellow, self)
     }
-    fn fg_blue(self) -> String {
+    fn blue(self) -> String {
         format!("{}{}", Foreground::Blue, self)
     }
-    fn fg_magenta(self) -> String {
+    fn magenta(self) -> String {
         format!("{}{}", Foreground::Magenta, self)
     }
-    fn fg_cyan(self) -> String {
+    fn cyan(self) -> String {
         format!("{}{}", Foreground::Cyan, self)
     }
-    fn fg_light_grey(self) -> String {
+    fn light_grey(self) -> String {
         format!("{}{}", Foreground::LightGrey, self)
     }
-    fn fg_grey(self) -> String {
+    fn grey(self) -> String {
         format!("{}{}", Foreground::Grey, self)
     }
-    fn fg_light_red(self) -> String {
+    fn light_red(self) -> String {
         format!("{}{}", Foreground::LightRed, self)
     }
-    fn fg_light_green(self) -> String {
+    fn light_green(self) -> String {
         format!("{}{}", Foreground::LightGreen, self)
     }
-    fn fg_light_yellow(self) -> String {
+    fn light_yellow(self) -> String {
         format!("{}{}", Foreground::LightYellow, self)
     }
-    fn fg_light_blue(self) -> String {
+    fn light_blue(self) -> String {
         format!("{}{}", Foreground::LightBlue, self)
     }
-    fn fg_light_magenta(self) -> String {
+    fn light_magenta(self) -> String {
         format!("{}{}", Foreground::LightMagenta, self)
     }
 
-    fn fg_light_cyan(self) -> String {
+    fn light_cyan(self) -> String {
         format!("{}{}", Foreground::LightCyan, self)
     }
-    fn fg_white(self) -> String {
+    fn white(self) -> String {
         format!("{}{}", Foreground::White, self)
     }
-    fn fg_strong(self) -> String {
+    fn strong(self) -> String {
         format!("{}{}", Foreground::Strong, self)
     }
 
-    fn style_bold(self) -> String {
+    fn bold(self) -> String {
         format!("{}{}", Style::Bold, self)
     }
-    fn style_italic(self) -> String {
+    fn italic(self) -> String {
         format!("{}{}", Style::Italic, self)
     }
-    fn style_underline(self) -> String {
+    fn underline(self) -> String {
         format!("{}{}", Style::Underline, self)
     }
-    fn style_blink(self) -> String {
+    fn blink(self) -> String {
         format!("{}{}", Style::Blink, self)
     }
-    fn style_reverse(self) -> String {
+    fn reverse(self) -> String {
         format!("{}{}", Style::Reverse, self)
     }
-    fn style_hidden(self) -> String {
+    fn hidden(self) -> String {
         format!("{}{}", Style::Hidden, self)
     }
-    fn style_crossed(self) -> String {
+    fn crossed(self) -> String {
         format!("{}{}", Style::Crossed, self)
     }
 }
